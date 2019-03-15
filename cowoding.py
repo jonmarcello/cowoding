@@ -6,7 +6,7 @@ def main():
     filename = 'hello.owo'
     file     = open(filename, 'r')
     lexer    = Lexer(file)
-    parser   = Parse(lexer.tokens)
+    parser   = Parse(lexer.tokens, lexer.stopCommand)
 
     lexer.tokenizer()
     # print("TOKENS:")

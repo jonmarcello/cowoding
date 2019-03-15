@@ -1,12 +1,13 @@
 class Lexer:
 
     def __init__(self, data):
-        self.data       = data
-        self.tokens     = []
-        self.keywords   = [
+        self.data        = data
+        self.tokens      = []
+        self.stopCommand = "ceaseyourresistance"
+        self.keywords    = [
             'esketit',
             'squadalawereoff',
-            'ceaseyourresistance',
+            self.stopCommand,
             'nani'
         ]
 

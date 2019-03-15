@@ -1,8 +1,9 @@
 class Parse:
 
-    def __init__(self, tokens):
-        self.tokens = tokens
-        self.AST    = []
+    def __init__(self, tokens, stopCommand):
+        self.tokens      = tokens
+        self.AST         = []
+        self.stopCommand = stopCommand
 
     def add_node(self, parent, node):
         for a in self.AST:
@@ -23,7 +24,7 @@ class Parse:
                     self.AST.append(t)
 
             elif token['id'] == 'keyword':
-                if token['value'] == 'ceaseyourresistance':
+                if token['value'] == self.stopCommand:
                     t = {token['value']: 0}
                     self.add_node(parent, t)
                 else:
