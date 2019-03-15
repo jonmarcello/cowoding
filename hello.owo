@@ -1,0 +1,12 @@
+start the sequence:
+    esketit "YEEEE"
+    nani 2 > 1 ? true | false
+    squadala were off away
+    cease your resistance
+
+true:
+    esketit "This is fact"
+false:
+    esketit "Naw fam"
+away:
+    esketit "YEET"
