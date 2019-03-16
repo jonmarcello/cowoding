@@ -24,9 +24,14 @@ class Evaluator:
             self.stop()
         elif loc[0] == self.keywords[3]:
             self.nani(loc[1])
+        elif loc[0] == self.keywords[4]:
+            self.bakka(loc[1])
     
     def echo(self, v):
         print(v)
+    
+    def bakka(self, v):
+        raise Exception(v)
 
     def goto(self, v):
         for node in self.AST:
