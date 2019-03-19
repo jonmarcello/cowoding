@@ -9,7 +9,7 @@ class Lexer:
             'squadalawereoff',
             self.stopCommand,
             'nani',
-            'bakka'
+            'yeet'
         ]
 
     def tokenizer(self):

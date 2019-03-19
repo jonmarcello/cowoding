@@ -9,3 +9,4 @@ print = esketit
 goto = squadala were off   
 stop = cease your resistance   
 if = nani   
+throw = yeet   

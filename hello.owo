@@ -8,6 +8,6 @@ true:
     esketit "This is fact"
 false:
     esketit "Naw fam"
-    bakka "NAW"
+    yeet "NAW"
 away:
     esketit "YEET"

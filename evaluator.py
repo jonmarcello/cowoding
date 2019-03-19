@@ -12,7 +12,7 @@ class Evaluator:
         elif isinstance(node, dict):
             for k, v in node.iteritems():
                 self.execute([k, v])
-        
+
     def execute(self, loc):
         if isinstance(loc[1], list):
             self.run(loc[1])
